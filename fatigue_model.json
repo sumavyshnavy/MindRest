@@ -1,0 +1,10 @@
+{
+  "model": "mock",
+  "weights": {
+    "tabSwitch": 0.35,
+    "scrollVelocity": 0.25,
+    "idleTime": 0.15,
+    "revisits": 0.15
+  },
+  "alpha": 0.5
+}

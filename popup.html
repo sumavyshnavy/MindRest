@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MindRest</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>MindRest</h1>
+      <p class="muted">Passive fatigue detection — overlay banner</p>
+    </header>
+
+    <section class="score">
+      <label>Current fatigue score</label>
+      <div id="score">—</div>
+    </section>
+
+    <section class="controls">
+      <button id="btn-preview" class="btn primary">Show Overlay</button>
+      <button id="btn-reset" class="btn ghost">Reset Baseline</button>
+    </section>
+
+    <section class="settings">
+      <label>Sensitivity</label>
+      <div class="srow">
+        <button class="sens" data-level="low">Low</button>
+        <button class="sens" data-level="med">Medium</button>
+        <button class="sens" data-level="high">High</button>
+      </div>
+      <label>Do Not Disturb</label>
+      <div class="dndrow">
+        <button id="dnd-10" class="btn small">10 min</button>
+        <button id="dnd-30" class="btn small">30 min</button>
+        <button id="dnd-60" class="btn small">1 hour</button>
+        <button id="dnd-240" class="btn small">4 hours</button>
+        <button id="dnd-480" class="btn small">8 hours</button>
+        <button id="dnd-tomorrow" class="btn small">Until Tomorrow</button>
+        <button id="dnd-off" class="btn small ghost">Cancel DND</button>
+      </div>
+      <label>Debug</label>
+      <div class="debugrow">
+        <label><input type="checkbox" id="auto-test"> Auto-test (periodic simulated triggers)</label>
+      </div>
+    </section>
+
+    <footer>
+      <small>All processing is local. No data leaves your device.</small>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
